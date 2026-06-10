@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>POINT STORE - Top Up FF</title>
+<style>
+body{font-family:Arial,sans-serif;background:#111827;color:white;margin:0}
+header{background:linear-gradient(45deg,#ff6b00,#ff0000);padding:25px;text-align:center}
+.container{max-width:900px;margin:auto;padding:20px}
+.card{background:#1f2937;padding:20px;border-radius:12px;margin-bottom:20px}
+input,select{width:100%;padding:12px;margin-top:10px}
+.btn{display:block;background:#25D366;color:white;text-decoration:none;padding:15px;text-align:center;border-radius:10px;margin-top:15px}
+</style>
+</head>
+<body>
+<header><h1>POINT STORE</h1><p>Top Up Diamond Free Fire</p></header>
+<div class="container">
+<div class="card">
+<input type="text" id="idff" placeholder="Masukkan ID FF">
+<select id="diamond">
+<option>70 Diamond - Rp10.000</option>
+<option>140 Diamond - Rp20.000</option>
+<option>355 Diamond - Rp50.000</option>
+</select>
+<a class="btn" href="#" onclick="pesanWA()">Pesan via WhatsApp</a>
+</div>
+</div>
+<script>
+function pesanWA(){
+let id=document.getElementById('idff').value;
+let dm=document.getElementById('diamond').value;
+let nomor='6281234567890';
+window.open('https://wa.me/'+nomor+'?text=ID FF: '+id+' Paket: '+dm,'_blank');
+}
+</script>
+</body>
+</html>
